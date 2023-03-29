@@ -3,7 +3,7 @@ body {
 }
 
 .project {
-    width: 600px;
+    /* width: 600px; */
     position: relative;
 }
 
@@ -34,4 +34,9 @@ body {
 .project .overlay:hover {
     opacity: 1;
     cursor: pointer;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 400px 400px 1fr;
 }
