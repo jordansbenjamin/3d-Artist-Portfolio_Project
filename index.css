@@ -123,6 +123,11 @@ body {
 	grid-area: dimensional;
 }
 
+.footer {
+    text-align: center;
+    padding: 64px;
+}
+
 @media only screen and (max-width: 1100px) {
 	.container {
         max-width: 100%;
@@ -155,5 +160,10 @@ body {
 	}
     .project .overlay {
         font-size: 24px;
+    }
+
+    .footer {
+        font-size: 14px;
+        padding: 32px;
     }
 }
