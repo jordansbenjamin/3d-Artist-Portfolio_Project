@@ -1,80 +1,112 @@
 body {
-    font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 
 .project {
-    /* width: 600px; */
-    position: relative;
+	/* width: 600px; */
+	position: relative;
 }
 
 .project img {
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
+	width: 100%;
+	object-fit: cover;
+	height: 100%;
 }
 
 .project .overlay {
-    background-color: rgba(255, 255, 255, 0.1);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    opacity: 0;
-    transition: all 0.2s ease;
+	background-color: rgba(255, 255, 255, 0.1);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	font-size: 36px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	opacity: 0;
+	transition: all 0.2s ease;
 }
 
 .project .overlay:hover {
-    opacity: 1;
-    cursor: pointer;
+	opacity: 1;
+	cursor: pointer;
 }
 
 .project-grid {
-    display: grid;
-    grid-template-areas: 
-    "eth eth alphabet"
-    "eth eth traveller"
-    "cube astro traveller"
-    "cup insta insta"
-    "cup insta insta"
-    "foam foam dimensional"
-    "foam foam dimensional";
+	display: grid;
+	grid-template-areas:
+		"eth eth alphabet"
+		"eth eth traveller"
+		"cube astro traveller"
+		"cup insta insta"
+		"cup insta insta"
+		"foam foam dimensional"
+		"foam foam dimensional";
+	gap: 16px;
+	width: 100%;
+	max-width: 90%;
+	margin: 0 auto;
 }
 
 #eth {
-    grid-area: eth;
+	grid-area: eth;
 }
 
 #alphabet {
-    grid-area: alphabet;
+	grid-area: alphabet;
 }
 
 #traveller {
-    grid-area: traveller;
+	grid-area: traveller;
 }
 #atro {
-    grid-area: astro;
+	grid-area: astro;
 }
 
 #cube {
-    grid-area: cube;
+	grid-area: cube;
 }
 #cup {
-    grid-area: cup;
+	grid-area: cup;
 }
 #insta {
-    grid-area: insta;
+	grid-area: insta;
 }
 #foam {
-    grid-area: foam;
+	grid-area: foam;
 }
 #dimensional {
-    grid-area: dimensional;
+	grid-area: dimensional;
+}
+
+@media only screen and (max-width: 1100px) {
+	.project-grid {
+        max-width: 100%;
+		grid-template-areas:
+			"eth eth"
+			"alphabet traveller"
+			"cube astro"
+			"insta insta"
+			"cup foam"
+			"dimensional dimensional";
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.project-grid {
+        max-width: 100%;
+		grid-template-areas:
+			"eth eth"
+			"alphabet alphabet"
+            "traveller traveller"
+			"cube astro"
+			"insta insta"
+			"cup cup"
+			"foam foam"
+			"dimensional dimensional";
+	}
 }
