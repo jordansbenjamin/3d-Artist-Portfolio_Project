@@ -5,13 +5,14 @@ body {
 .container {
     margin: 0 auto;
     max-width: 90%;
-    padding: 16px;
+    padding: 0 16px;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     padding: 64px 0;
+    /* border: 2px solid red; */
 }
 
 .navbar .right img {
@@ -22,9 +23,11 @@ body {
 .navbar .left {
     font-size: 32px;
     font-weight: bold;
+    /* border: 2px solid blue; */
 }
 
 .navbar .right {
+    /* border: 2px solid black; */
     width: 400px;
     display: flex;
     justify-content: space-between;
@@ -35,9 +38,24 @@ body {
     text-decoration: none;
     color: black;
 }
+
 .navbar .right a:hover {
     text-decoration: underline;
     color: black;
+}
+
+.navbar .hamburger {
+    height: 50px;
+    width: 50px;
+    display: none;
+}
+
+.navbar .bar {
+    background-color: black;
+    height: 4px;
+    width: 36px;
+    margin: 3px;
+    border-radius: 10px;
 }
 
 .project {
@@ -147,6 +165,33 @@ body {
 
 @media only screen and (max-width: 768px) {
 	.project-grid {
+        margin-top: 100px;
+    }
+    
+    .navbar {
+        padding: 20px 24px;
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        background-color: white;
+        width: 100%;
+    }
+    
+    .navbar .right {
+        display: none;
+    }
+
+    .navbar .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid green; */
+    }
+    
+    .project-grid {
         max-width: 100%;
 		grid-template-areas:
 			"eth eth"
