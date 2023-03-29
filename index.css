@@ -36,6 +36,10 @@ body {
 	cursor: pointer;
 }
 
+.overlay.white {
+    color: white;
+}
+
 .project-grid {
 	display: grid;
 	grid-template-areas:
@@ -109,4 +113,7 @@ body {
 			"foam foam"
 			"dimensional dimensional";
 	}
+    .project .overlay {
+        font-size: 24px;
+    }
 }
