@@ -253,3 +253,8 @@ body {
         transform: rotate(-45deg) translate(4px, -10px);
     }
 }
+
+.purple {
+    background-color: purple;
+    transform: scale(2);
+}
