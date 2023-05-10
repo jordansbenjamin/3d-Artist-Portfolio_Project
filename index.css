@@ -50,7 +50,7 @@ body {
     display: none;
 }
 
-.navbar .bar {
+.navbar .bar1, .bar2, .bar3 {
     background-color: black;
     height: 4px;
     width: 36px;
@@ -213,15 +213,15 @@ body {
     }
 }
 
-.hamburger .bar:nth-child(1) {
+.animateBar1 {
     animation: flibBar1 1s infinite;
 }
 
-.hamburger .bar:nth-child(2) {
+.animateBar2 {
     animation: fadeBar2 1s infinite;
 }
 
-.hamburger .bar:nth-child(3) {
+.animateBar3 {
     animation: flibBar3 1s infinite;
 }
 
@@ -252,7 +252,7 @@ body {
     to{
         transform: rotate(-45deg) translate(4px, -10px);
     }
-}
+}_
 
 .purple {
     background-color: purple;
